@@ -2,7 +2,7 @@
 
 A comprehensive mathematical analysis of how ocean temperature modulates predator-prey dynamics using bifurcation theory, stability analysis, and numerical simulation.
 
-**Status:** ✅ Complete | **Language:** Python 3.8+ | **License:** MIT
+**Language:** Python 3.8+ | **License:** MIT
 
 ---
 
@@ -34,7 +34,6 @@ The asymmetry in temperature sensitivity (predators 2.5× more temperature-sensi
 ```
 temperature-predator-prey-ode/
 │
-├── README.md                                # This file
 ├── LICENSE                                  # MIT License
 ├── Temperature_Dependent_Predator_Prey_Analysis.pdf  # Compiled PDF
 ├── requirements.txt                         # Python dependencies
