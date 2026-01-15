@@ -126,8 +126,8 @@ Tc = (1/αd) · ln(b·a₀·K / d₀) = 13.86°C
 
 ```bash
 # Clone repository
-git clone https://github.com/[YOUR-USERNAME]/temperature-predator-prey-ode.git
-cd temperature-predator-prey-ode
+git clone https://github.com/vishalrakhecha18102000-debug/predator-prey-temperature-ode.git
+cd predator-prey-temperature-ode
 
 # Create virtual environment
 python -m venv .venv
@@ -165,7 +165,7 @@ Complete Analysis Pipeline
 
 [Parameter Summary...]
 
-[PHASE 3] Running numerical simulations and bifurcation analysis...
+Running numerical simulations and bifurcation analysis...
 
 Running simulation 1/4: T = 10.0°C...
   Saved to data/scenario_T10.csv
@@ -173,7 +173,7 @@ Running simulation 1/4: T = 10.0°C...
 
 [... more output ...]
 
-[PHASE 4] Generating figures...
+Generating figures...
 
 Saved: figures/timeseries.png
 Saved: figures/phase_portraits.png
@@ -230,41 +230,38 @@ Commercial populations of small predatory fish (anchovies, capelin, sardines) ma
 
 The final PDF report (`Temperature_Dependent_Predator_Prey_Analysis.pdf`) includes:
 
-**Section 1: Introduction** (~800 words)
+**Section 1: Introduction**
 - Motivation and context
 - Scientific questions
 - Project objectives
 - Code availability
 
-**Section 2: Mathematical Model** (~2,000 words)
+**Section 2: Mathematical Model**
 - ODE system derivation
 - Parameter definitions
 - Temperature-dependent rates
 - Relation to classical models
 
-**Section 3: Analysis** (~3,000 words)
+**Section 3: Analysis**
 - Equilibrium conditions
 - Stability analysis (Jacobian, eigenvalues)
 - Bifurcation theory
 - Critical temperature criterion
 
-**Section 4: Numerical Results** (~2,500 words)
+**Section 4: Numerical Results**
 - Scenario simulations with plots
 - Phase plane analysis
 - Bifurcation diagrams
 - Stability metrics
 - Theory vs numerics comparison
 
-**Section 5: Conclusions** (~1,500 words)
+**Section 5: Conclusions**
 - Key findings summary
 - Biological implications
 - Model limitations
 - Future extensions
 
-**References** (IEEE format, 11 citations)
-
-**Total:** ~45–50 pages with figures, tables, and mathematical derivations
-
+**References**
 ---
 
 ## 🔧 Code Architecture
@@ -308,7 +305,7 @@ Generates 4 publication-quality figures using Matplotlib.
 ## 🎓 How to Use This Project
 
 ### For Learning
-1. Read Sections 1–2 of the PDF (~30 minutes)
+1. Read Sections 1–2 of the PDF
 2. Review the ODE system in `config.py`
 3. Run `python main.py` and observe outputs
 4. Study the generated figures
@@ -330,10 +327,10 @@ Generates 4 publication-quality figures using Matplotlib.
 ## 📊 File Descriptions
 
 ### Python Scripts
-- **main.py** (~50 lines): Entry point, orchestrates pipeline
-- **config.py** (~100 lines): All parameters in one place
-- **simulations.py** (~250 lines): ODE integration, bifurcation analysis
-- **plotting.py** (~300 lines): Figure generation with Matplotlib
+- **main.py**: Entry point, orchestrates pipeline
+- **config.py**: All parameters in one place
+- **simulations.py**: ODE integration, bifurcation analysis
+- **plotting.py**: Figure generation with Matplotlib
 - **requirements.txt**: Dependencies list
 
 ### Data Files (CSV format)
@@ -354,41 +351,13 @@ Generates 4 publication-quality figures using Matplotlib.
 
 ---
 
-## 🔗 References
-
-All references in IEEE format:
-
-[1] M. L. Rosenzweig and R. H. MacArthur, "Graphical representation and stability conditions of predator-prey interactions," *The American Naturalist*, vol. 97, no. 895, pp. 209–223, 1963.
-
-[2] S. H. Strogatz, *Nonlinear Dynamics and Chaos*, 2nd ed. Westview Press, 2014.
-
-[3] J. Guckenheimer and P. Holmes, *Nonlinear Oscillations, Dynamical Systems, and Bifurcations of Vector Fields*, Springer-Verlag, 1983.
-
-[4] G. F. Fussmann, S. P. Ellner, K. W. Shertzer, and N. G. Hairston Jr, "Crossing the Hopf bifurcation in a live predator-prey system," *Science*, vol. 290, no. 5495, pp. 1358–1360, 2000.
-
-[5] C. Parmesan, "Ecological and evolutionary responses to recent climate change," *Annual Review of Ecology, Evolution, and Systematics*, vol. 37, pp. 637–669, 2006.
-
-[6] H.-O. Pörtner and A. P. Farrell, "Physiology and climate change," *Science*, vol. 322, no. 5902, pp. 690–692, 2008.
-
-[7] J. R. Dormand and P. J. Prince, "A family of embedded Runge-Kutta formulae," *Journal of Computational and Applied Mathematics*, vol. 6, no. 1, pp. 19–26, 1980.
-
-[8] P. A. Abrams and L. R. Ginzburg, "The nature of predator-prey evolution," *Science*, vol. 281, no. 5380, pp. 1349–1355, 1998.
-
-[9] A. J. Lotka, *Elements of Physical Biology*, Williams and Wilkins, Baltimore, MD, 1925.
-
-[10] V. Volterra, "Fluctuations in the abundance of a species considered mathematically," *Nature*, vol. 118, no. 2972, pp. 558–560, 1926.
-
-[11] W. E. Boyce, R. C. DiPrima, and D. B. Meade, *Elementary Differential Equations and Boundary Value Problems*, 10th ed. John Wiley & Sons, 2012.
-
----
-
 ## 👨‍💻 Author
 
-**Vishal Raj**
+**Vishal Rakhecha**
 - Master's Student in Computational Science
-- ETH Zürich, Department of Computer Science
-- Email: vr18@student.ethz.ch
-- Location: Zürich, Switzerland
+- Universit`a della Svizzera italiana (USI), Master in Computational Science
+- Email: vishal.rakhecha@usi.ch
+- Location: Lugano, Ticino, Switzerland
 
 **Project Date:** January 2026
 
@@ -436,27 +405,11 @@ If you encounter issues:
 
 ## 📖 Recommended Reading Order
 
-1. **Start here:** This README (10 minutes)
-2. **Theory:** PDF Sections 2–3 (45 minutes)
-3. **Results:** PDF Section 4 + Figures (30 minutes)
-4. **Code:** Read Python files in order: main.py → config.py → simulations.py → plotting.py (20 minutes)
-5. **Deep dive:** Full PDF + experiment with code (2+ hours)
-
----
-
-## ⚡ Quick Start
-
-```bash
-# 30 seconds to run
-git clone https://github.com/[YOUR-USERNAME]/temperature-predator-prey-ode.git
-cd temperature-predator-prey-ode
-pip install -r requirements.txt
-python main.py
-
-# View results
-open figures/timeseries.png
-open Temperature_Dependent_Predator_Prey_Analysis.pdf
-```
+1. **Start here:** This README
+2. **Theory:** PDF Sections 2–3
+3. **Results:** PDF Section 4 + Figures
+4. **Code:** Read Python files in order: main.py → config.py → simulations.py → plotting.py
+5. **Deep dive:** Full PDF + experiment with code
 
 ---
 
